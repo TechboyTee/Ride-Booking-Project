@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+section{
+    width: 98%;
+    background-color: rgb(240, 240, 229);
+    height: 90vh;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+section.first{
+    background: url(Mansa.jpg) center;
+    background: linear-gradient(rgba(0,0,0,0.8)), rgba(0,0,0,0.8);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    padding: 5px 10px;
+    color: white; 
+}
+
+nav ul li a.active{
+    color: aqua;
+    text-transform: uppercase;
+}
+
+nav ul li a:after{
+    content: "";
+    background-color: aqua;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.logo{
+    color: white;
+}
+.logo span{
+    color: rgb(14, 204, 204);
+}
+
+button{
+    background-color: rgb(10, 133, 133);
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.main{
+    color: white;
+    margin: 0;
+    width: 100%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    text-align: center;
+}
+
+h1.homecontenth, p.homecontentp{
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+h1.homecontenth span, p.homecontentp span{
+    color: aqua;
+    font-size: x-large;
+}
+
+button.booknow{
+    padding: 5px 30px;
+    border-radius: 30px;
+}
